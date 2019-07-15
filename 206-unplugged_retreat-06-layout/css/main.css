@@ -1,6 +1,5 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -97,160 +96,126 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   html {
 
-   }
-   body {
+/* -------------------- Base Header - Footer Styles -------------------- */
 
-   }
-/*------- base header+footer----------*/
-
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-}
-/*---------header-----------*/
-header {
-
 }
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
-
+  flex-flow: row wrap;
 }
-header .header-divider {
 
-}
- header nav {
+header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-
+  flex-flow: row wrap;
 }
+
 header nav ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-
+  justify-content: space-around;
 }
-header nav ul li a {
-  padding: .5em;
 
-
-}
-/*---------footer--------*/
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-footer .content-wrapper {
-
-}
-footer .footer-content {
-text-align: center;
-}
-address .contact p {
-
-
-}
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-
-
-}
 footer .social-icons {
   display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+  justify-content: space-around;
+  align-items: center;
 }
+
 footer .social-icons p {
-
-}
-footer .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-}
-
-/*-----------Mobile Style----------*/
-
-/*********About Page**********/
-
-.hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-h1 {
 
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-main .content-wrapper {
+
+/* Aside */
+
+aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
-aside .find-out-more {
 
-}
-.form-description {
+/* Features */
 
-}
-.form {
-
-}
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  text-align: center;
+  flex-flow: row wrap;
 }
-article .features-item {
+
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  flex-flow: row wrap;
 }
 
-.fontawesome-icon {
+/* Reviews */
 
-}
-.features-item-description {
-
-}
-section .reviews {
+.reviews {
   display: flex;
-      justify-content: center;
-      align-items: center;
-}
-section .content-wrapper {
-
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 /* ==========================================================================
    Helper classes
@@ -265,63 +230,63 @@ section .content-wrapper {
 }
 
 /*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
 
-.sr-only {
+.visuallyhidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  white-space: nowrap;
   /* 1 */
 }
 
 /*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
   width: auto;
+  white-space: inherit;
 }
 
 /*
-* Hide visually and from screen readers, but maintain layout
-*/
+ * Hide visually and from screen readers, but maintain layout
+ */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
 
 .clearfix:before,
 .clearfix:after {
@@ -346,9 +311,9 @@ section .content-wrapper {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -397,7 +362,7 @@ section .content-wrapper {
   }
   /*
      * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
     display: table-header-group;
