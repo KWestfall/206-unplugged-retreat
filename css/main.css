@@ -112,7 +112,7 @@ header, footer {
 }
 /*---------header-----------*/
 header {
-
+padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -120,26 +120,30 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  margin: 0;
 
 }
 header .header-divider {
+  width: 100%;
 
 }
  header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 60%;
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   list-style: none;
+  width:60%;
+  padding: 0;
 
 }
-header nav ul li a {
-  padding: .5em;
+header nav ul li  {
+margin: 0 25px;
 
 
 }
@@ -151,6 +155,8 @@ footer {
   flex-flow: column;
 }
 footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 
 }
 footer .footer-content {
@@ -176,7 +182,7 @@ footer .social-icons {
 
 }
 footer .social-icons p {
-
+margin: 0;
 }
 footer .copyright {
   display: flex;
@@ -194,6 +200,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 85%;
 }
 h1 {
 
@@ -203,12 +210,16 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  width: 85%;
+  padding: 1em;
+
 }
  .find-out-more {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  width: 85%;
 }
 .form-description {
 
@@ -226,11 +237,20 @@ main .content-wrapper {
   align-items: center;
   flex-flow: column;
   text-align: center;
+
+}
+p.features {
+  margin: 0;
+}
+div .features-tagline {
+  width: 85%;
 }
 article .features-item {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
 
 
 }
@@ -239,15 +259,18 @@ article .features-item {
 
 }
 .features-item-description {
-
+width: 55%;
+padding: 0 6em;
+text-align: center;
 }
 section .reviews {
   display: flex;
       justify-content: center;
       align-items: center;
+      width: 90%;
 }
 section .content-wrapper {
-
+Width: 90%;
 }
 
 /*********About**********/
@@ -256,6 +279,11 @@ section .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  width:85%;
+}
+div.mission-statement {
+  width: 85%;
+  text-align: justify;
 }
 .map {
 
@@ -265,7 +293,13 @@ section .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  width:85%;
 }
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    padding-left: 16px;
+  }
 
 
 
@@ -283,6 +317,8 @@ section .content-wrapper {
   justify-content: left;
   align-items: center;
   flex-flow: column;
+  width:85%;
+  margin: 0 25px;
 }
 
 
