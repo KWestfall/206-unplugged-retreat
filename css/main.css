@@ -155,6 +155,10 @@ footer {
   flex-flow: column;
 }
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   width: 55%;
   margin: 50px 0;
 
@@ -162,10 +166,7 @@ footer .content-wrapper {
 footer .footer-content {
 text-align: center;
 }
-address .contact p {
 
-
-}
 footer .social {
   display: flex;
   justify-content: center;
@@ -197,21 +198,14 @@ footer .copyright {
 /*********Home Page**********/
 
 .hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 85%;
 }
 h1 {
 
 }
 main .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  width: 85%;
-  padding: 1em;
+
 
 }
  .find-out-more {
@@ -225,18 +219,11 @@ main .content-wrapper {
 
 }
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+
 
 }
 .features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  text-align: center;
+text-align: center;
 
 }
 p.features {
@@ -245,22 +232,21 @@ p.features {
 div .features-tagline {
   width: 85%;
 }
-article .features-item {
+.features-container {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
 
-
-
+}
+article .features-item {
 
 }
 
 .fontawesome-icon {
-
 }
 .features-item-description {
 width: 55%;
-padding: 0 6em;
+padding: 0 12em;
 text-align: center;
 }
 section .reviews {
@@ -268,6 +254,9 @@ section .reviews {
       justify-content: center;
       align-items: center;
       width: 90%;
+}
+img {
+  width:33.3%;
 }
 section .content-wrapper {
 Width: 90%;
@@ -312,7 +301,7 @@ h1 {
 
 /***********FAQS*********/
 
-.faqs, .faq-1, .faq-2, .faq-3, .faq-4  {
+ article.faqs {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -413,10 +402,72 @@ h1 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet style */
+header {
+justify-content: space-around;
+}
+  header .content-wrapper {
+    flex-flow: row nowrap;
+}
+header nav ul {
+  justify-content: flex-start;
+  width:60%;
+  padding: 0;
+}
+.find-out-more {
+ flex-flow: row nowrap;
+}
+ .features-item {
+   flex: 1 1 50%;
+ background-color: red;
+}
+ .reviews article {
+   display: flex;
+    flex: 1 1 50%;
+}
+.reviews article div {
+  flex-wrap: wrap;
+}
+section .content-wrapper {
+}
+footer .content-wrapper {
+flex-flow: row nowrap;
 }
 
+ article.faqs {
+   flex-basis: 40%;
+flex-flow: row;
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop style */
+
+  .features-item {
+    flex: 1 1 33.3%;
+  background-color: red;
+ }
+
+
+
+
+
+
+S
+
+
+
+
+
+
+
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
