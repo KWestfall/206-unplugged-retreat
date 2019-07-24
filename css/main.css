@@ -97,10 +97,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   html, body {
+   html {
 font-size: 16px;
    }
-
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 1.88em;
+}
+h3 {
+  font-size: 1.125em;
+}
+p {
+  font-size: .88em;
+  line-height: 1.125;
+}
+a {
+     color: #e2e3ed;
+     text-decoration: none;
+     font-size: 1.125em;
+}
 /*------- base header+footer----------*/
 
 header, footer {
@@ -165,8 +193,15 @@ footer .content-wrapper {
 }
 footer .footer-content {
 text-align: center;
-}
 
+}
+address {
+    font-style: normal;
+}
+address p {
+  font-family: 'Open Sans', sans-serif;
+
+}
 footer .social {
   display: flex;
   justify-content: center;
@@ -228,7 +263,7 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: red;
+
 }
 .features p {
   text-align: center;
@@ -429,7 +464,7 @@ aside .content-wrapper .form {
 
 .features .features-item-description {
    width: 50%;
- background-color: blue;
+
 }
 .features article {
   display: flex;
@@ -517,7 +552,7 @@ flex-flow: row nowrap;
 
     .features .features-item-description {
        width: 33%;
-     background-color: orange;
+
     }
     .features article {
       display: flex;
