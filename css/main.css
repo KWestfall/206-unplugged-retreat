@@ -103,6 +103,7 @@ font-size: 16px;
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -123,11 +124,15 @@ h3 {
 p {
   font-size: .88em;
   line-height: 1.125;
+
 }
 a {
-     color: #e2e3ed;
      text-decoration: none;
      font-size: 1.125em;
+}
+
+a:visited {
+  color: inherit;
 }
 /*------- base header+footer----------*/
 
@@ -141,6 +146,8 @@ header, footer {
 /*---------header-----------*/
 header {
 padding: 15px 0;
+background-color: black;
+color: #e2e3ed;
 }
 
 header .content-wrapper {
@@ -181,6 +188,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  background-color: black;
 }
 footer .content-wrapper {
   display: flex;
@@ -246,9 +254,30 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 aside .form {
   margin-top: 30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* Features */
 
@@ -272,17 +301,18 @@ aside .form {
 /* Reviews */
 
 
-section .reviews {
+.reviews {
   display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+
 }
 img {
   width:33.3%;
 }
-section .content-wrapper {
-Width: 90%;
+.content-wrapper {
+
 }
 
 /*********About**********/
@@ -291,6 +321,7 @@ Width: 90%;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 
 }
 div.content-wrapper {
@@ -305,6 +336,7 @@ div.content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
 
   h2 {
@@ -324,13 +356,12 @@ div.content-wrapper {
 
 /***********FAQS*********/
 
-  .content-wrapper {
+  .faq {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width:85%;
-  margin: 0 25px;
+  background-color: #527158;
 }
 
 
