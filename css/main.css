@@ -135,6 +135,9 @@ a {
      font-size: 1.125em;
      font-weight: bold;
 }
+img {
+  width: 100%;
+}
 
 a:visited {
   color: inherit;
@@ -255,7 +258,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+background-size: cover;
 }
+
 
 /* Aside */
 
@@ -295,6 +301,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features .features-items {
