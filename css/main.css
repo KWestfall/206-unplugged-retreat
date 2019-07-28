@@ -230,9 +230,9 @@ footer .social-icons {
   align-items: center;
 }
 footer .social-icons p {
-  display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #527158;
+  font-size: 2.5em;
+  padding: 0 35px;
 }
 
 footer .copyright {
