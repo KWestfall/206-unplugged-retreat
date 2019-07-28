@@ -317,6 +317,11 @@ input[type=button] {
   text-align: center;
   margin: 0;
 }
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
 /* Reviews */
 
 
@@ -581,6 +586,10 @@ aside .content-wrapper .form {
 }
 .features .features-item-description {
   width: 50%;
+}
+
+.features i {
+  margin-bottom: 30px;
 }
 
 /*Reviews*/
